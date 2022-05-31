@@ -1,0 +1,27 @@
+- connection: local
+  gather_facts: false
+  hosts: eks_hosts
+  tasks:
+  - ec2_group:
+      name: "{{name}}"
+      description: security group descryption
+      vpc_id: "{{vpc_id}}"
+      region: "{{region}}"
+      aws_secret_key: "{{aws_secret_key}}"
+      aws_access_key: "{{aws_access_key}}"
+      rules:
+        - proto: tcp
+          group_id: "{{security_group_id}}"
+          from_port: "{{from_port}}"
+          to_port: "{{to_port}}"
+          cidr_ip: 0.0.0.0/0
+  - ec2_group:
+      description: default VPC security group
+      name: default
+      vpc_id: "{{vpc_id}}"
+      region: "{{region}}"
+      rules:
+        - proto: tcp
+          from_port: "{{from_port}}"
+          to_port: "{{to_port}}"
+          cidr_ip: 0.0.0.0/0

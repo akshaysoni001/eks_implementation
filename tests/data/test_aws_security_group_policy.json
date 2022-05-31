@@ -1,0 +1,292 @@
+[
+  [
+    {
+      "Description": "default VPC security group",
+      "GroupName": "default",
+      "IpPermissions": [
+        {
+          "FromPort": 443,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 443,
+          "UserIdGroupPairs": []
+        }
+      ],
+      "OwnerId": "596202736545",
+      "GroupId": "sg-019734c06f93f1fd8",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ],
+      "VpcId": "vpc-0830b5ec2f7cd2684"
+    },
+    {
+      "Description": "EKS created security group applied to ENI that is attached to EKS Control Plane master nodes, as well as any managed workloads.",
+      "GroupName": "eks-cluster-sg-eks2-3115333",
+      "IpPermissions": [
+        {
+          "FromPort": 443,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "GroupId": "sg-07a2209f522d4f801",
+              "UserId": "596202736545"
+            }
+          ]
+        }
+      ],
+      "OwnerId": "596202736545",
+      "GroupId": "sg-07a2209f522d4f801",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "kubernetes.io/cluster/eks2",
+          "Value": "owned"
+        },
+        {
+          "Key": "aws:eks:cluster-name",
+          "Value": "eks2"
+        },
+        {
+          "Key": "Name",
+          "Value": "eks-cluster-sg-eks2-3115333"
+        }
+      ],
+      "VpcId": "vpc-0830b5ec2f7cd2684"
+    },
+    {
+      "Description": "EKS created security group applied to ENI that is attached to EKS Control Plane master nodes, as well as any managed workloads.",
+      "GroupName": "eks-cluster-sg-eks_cluster-875914312",
+      "IpPermissions": [
+        {
+          "FromPort": 443,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "GroupId": "sg-07a2209f522d4f801",
+              "UserId": "596202736545"
+            }
+          ]
+        }
+      ],
+      "OwnerId": "596202736545",
+      "GroupId": "sg-05b4b5b7622ff9a18",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "eks-cluster-sg-eks_cluster-875914312"
+        },
+        {
+          "Key": "kubernetes.io/cluster/eks_cluster",
+          "Value": "owned"
+        },
+        {
+          "Key": "aws:eks:cluster-name",
+          "Value": "eks_cluster"
+        }
+      ],
+      "VpcId": "vpc-0830b5ec2f7cd2684"
+    }
+  ],
+  [
+    {
+      "Description": "default VPC security group",
+      "GroupName": "default",
+      "IpPermissions": [
+        {
+          "FromPort": 443,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 443,
+          "UserIdGroupPairs": []
+        }
+      ],
+      "OwnerId": "596202736545",
+      "GroupId": "sg-019734c06f93f1fd8",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ],
+      "VpcId": "vpc-0830b5ec2f7cd2684"
+    },
+    {
+      "Description": "EKS created security group applied to ENI that is attached to EKS Control Plane master nodes, as well as any managed workloads.",
+      "GroupName": "eks-cluster-sg-eks2-3115333",
+      "IpPermissions": [
+        {
+          "FromPort": 443,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "GroupId": "sg-07a2209f522d4f801",
+              "UserId": "596202736545"
+            }
+          ]
+        }
+      ],
+      "OwnerId": "596202736545",
+      "GroupId": "sg-07a2209f522d4f801",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "kubernetes.io/cluster/eks2",
+          "Value": "owned"
+        },
+        {
+          "Key": "aws:eks:cluster-name",
+          "Value": "eks2"
+        },
+        {
+          "Key": "Name",
+          "Value": "eks-cluster-sg-eks2-3115333"
+        }
+      ],
+      "VpcId": "vpc-0830b5ec2f7cd2684"
+    },
+    {
+      "Description": "EKS created security group applied to ENI that is attached to EKS Control Plane master nodes, as well as any managed workloads.",
+      "GroupName": "eks-cluster-sg-eks_cluster-875914312",
+      "IpPermissions": [
+        {
+          "FromPort": 443,
+          "IpProtocol": "tcp",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "ToPort": 443,
+          "UserIdGroupPairs": [
+            {
+              "GroupId": "sg-07a2209f522d4f801",
+              "UserId": "596202736545"
+            }
+          ]
+        }
+      ],
+      "OwnerId": "596202736545",
+      "GroupId": "sg-05b4b5b7622ff9a18",
+      "IpPermissionsEgress": [
+        {
+          "IpProtocol": "-1",
+          "IpRanges": [
+            {
+              "CidrIp": "0.0.0.0/0"
+            }
+          ],
+          "Ipv6Ranges": [],
+          "PrefixListIds": [],
+          "UserIdGroupPairs": []
+        }
+      ],
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "eks-cluster-sg-eks_cluster-875914312"
+        },
+        {
+          "Key": "kubernetes.io/cluster/eks_cluster",
+          "Value": "owned"
+        },
+        {
+          "Key": "aws:eks:cluster-name",
+          "Value": "eks_cluster"
+        }
+      ],
+      "VpcId": "vpc-0830b5ec2f7cd2684"
+    }
+  ]
+]
